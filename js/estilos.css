@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff5fa;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #cc3366;
+    margin-bottom: 30px;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* Tarjetas de gatitos */
+.c-lista-gato {
+    background: #ffe6f0;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(255, 192, 203, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.c-lista-gato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(255, 105, 180, 0.3);
+}
+
+.c-lista-gato img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.c-lista-gato p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #cc3366;
+    margin: 0;
+}
+
+/* Botones bonitos */
+button {
+    background-color: #ff99cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #e673a3;
+}
