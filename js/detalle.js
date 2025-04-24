@@ -9,7 +9,6 @@ function mostrarDetalle(gato) {
             <p><strong>Temperamento:</strong> ${gato.temperament}</p>
             <br>
             <button onclick="agregarAFavoritos('${gato.id}')">Agregar a Favoritos</button>
-            <button onclick="agregarAMemes('${gato.id}')">Enviar a Memes</button>
             <button onclick="general()">Volver</button>
         </section>
     `;
