@@ -1,16 +1,23 @@
 const CACHE_NAME = 'cats-app-cache-v1';
 
 const urlsToCache = [
-  '/', // Asegura el index.html
+  '/',
   '/index.html',
-  '/js/home.js',
-  '/service-worker.js',
+  '/manifest.json',
+  '/home.js',
+  '/js/api.js',
+  '/js/lista.js',
+  '/js/usuario.js',
+  '/js/aleatorio.js',
+  '/js/favoritos.js',
+  '/js/memes.js',
+  '/js/detalle.js',
+  '/js/estilos.css',
   '/icons/huella.png',
   '/icons/pata_192.png',
-  '/manifest.json'
+  
 ];
 
-// Instalar el Service Worker y guardar archivos en caché
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -19,7 +26,6 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// Activar el Service Worker y limpiar cachés antiguas
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -34,7 +40,6 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Interceptar peticiones y responder con caché si existe
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
