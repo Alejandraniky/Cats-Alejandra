@@ -1,0 +1,21 @@
+{
+  "name": "Cats-Alejandra",
+  "short_name": "Cats-app",
+  "description": "Mira las diferentes razas de gatos con detalles y poder guardar memes",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFB6C1",
+  "theme_color": "#E89EB8",
+  "icons": [
+    {
+      "src": "icons/pata_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/huella.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
